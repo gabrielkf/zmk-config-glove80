@@ -95,7 +95,7 @@
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
             >;
-        }
+        };
 
         left {
             bindings = <
@@ -106,7 +106,7 @@
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
             >;
-        }
+        };
 
         lower_layer {
             bindings = <
