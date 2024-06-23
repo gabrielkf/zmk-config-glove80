@@ -91,7 +91,7 @@
             &trans        &trans      &trans       &trans       &trans                                                                                           &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &kp LEFT    &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
             >;
@@ -102,7 +102,7 @@
             &trans        &trans      &trans       &trans       &trans                                                                                           &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
+            &trans        &trans      &trans       &trans       &kp RIGHT    &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
             >;
