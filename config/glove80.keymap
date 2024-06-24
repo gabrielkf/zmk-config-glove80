@@ -84,7 +84,7 @@
             &kp TAB        &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                    &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
             &kp CAPS       &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                    &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
             &kp GRAVE      &kp Z           &kp X             &kp C            &kp V            &kp B   &kp LGUI          &kp LALT  &mo MAGIC    &layer_td  &kp RALT   &kp RGUI          &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &kp RBKT
-            &mo LCTRL      &kp HOME        &kp END           &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC   &kp DEL      &kp RET    &kp BSPC   &lt R_LAYER SPACE         &kp UP       &kp DOWN         &kp PG_UP         &kp PG_DN          &kp BSLH
+            &mo LCTRL      &kp HOME        &kp END           &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC   &kp DEL      &kp RET    &kp BSPC   &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
             >;
         };
 
