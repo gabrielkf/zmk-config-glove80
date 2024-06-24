@@ -102,6 +102,36 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+
+        pst: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp X>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LGUI>
+                ;
+        };
     };
 
     keymap {
@@ -121,10 +151,10 @@
         right {
             bindings = <
             &trans        &trans      &trans       &trans       &trans                                                                                            &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &term         &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &kp K_CUT     &pword      &kp UP       &nword       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &kp K_COPY    &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &kp K_PASTE   &trans      &trans       &trans       &trans       &trans
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans        &trans      &trans       &trans       &trans       &term
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &kp TAB
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &trans
+            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &pst          &trans      &trans       &trans       &trans       &trans
             &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &kp K_UNDO  &kp K_REDO   &trans       &trans       &trans
             >;
         };
