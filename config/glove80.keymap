@@ -248,6 +248,36 @@
                 , <&macro_release &kp LEFT_SHIFT>
                 ;
         };
+
+        refresh: refresh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        close: close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp W>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        quit: quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp Q>
+                , <&macro_release &kp RGUI>
+                ;
+        };
     };
 
     keymap {
@@ -269,9 +299,9 @@
             &trans        &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &trans
-            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &trans
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
+            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
+            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
             >;
         };
 
