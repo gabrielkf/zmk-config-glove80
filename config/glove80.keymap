@@ -170,7 +170,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp right>
+                , <&macro_tap &kp RIGHT>
                 , <&macro_release &kp LGUI>
                 ;
         };
