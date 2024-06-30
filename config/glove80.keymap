@@ -163,7 +163,7 @@
                 , <&macro_tap &kp LEFT>
                 , <&macro_release &kp LGUI>
                 ;
-        }
+        };
 
         end: end {
             compatible = "zmk,behavior-macro";
@@ -173,7 +173,7 @@
                 , <&macro_tap &kp right>
                 , <&macro_release &kp LGUI>
                 ;
-        }
+        };
 
         top: top {
             compatible = "zmk,behavior-macro";
@@ -183,7 +183,7 @@
                 , <&macro_tap &kp UP>
                 , <&macro_release &kp LGUI>
                 ;
-        }
+        };
 
         bottom: bottom {
             compatible = "zmk,behavior-macro";
@@ -193,7 +193,7 @@
                 , <&macro_tap &kp DOWN>
                 , <&macro_release &kp LGUI>
                 ;
-        }
+        };
 
         print: print {
             compatible = "zmk,behavior-macro";
@@ -205,7 +205,7 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_release &kp RIGHT_SHIFT>
                 ;
-        }
+        };
 
         find: find {
             compatible = "zmk,behavior-macro";
@@ -215,7 +215,7 @@
                 , <&macro_tap &kp F>
                 , <&macro_release &kp RGUI>
                 ;
-        }
+        };
 
         next: next {
             compatible = "zmk,behavior-macro";
@@ -225,7 +225,7 @@
                 , <&macro_tap &kp D>
                 , <&macro_release &kp RGUI>
                 ;
-        }
+        };
 
         all: all {
             compatible = "zmk,behavior-macro";
@@ -235,7 +235,7 @@
                 , <&macro_tap &kp F2>
                 , <&macro_release &kp RGUI>
                 ;
-        }
+        };
 
         format: format {
             compatible = "zmk,behavior-macro";
@@ -247,7 +247,7 @@
                 , <&macro_release &kp RALT>
                 , <&macro_release &kp LEFT_SHIFT>
                 ;
-        }
+        };
     };
 
     keymap {
