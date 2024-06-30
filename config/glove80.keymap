@@ -123,7 +123,7 @@
                 ;
         };
 
-        pst: paste {
+        paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -148,12 +148,52 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_press &kp LSHFT>
+                , <&macro_press &kp LSHIFT>
                 , <&macro_tap &kp Z>
                 , <&macro_release &kp LSHIFT>
                 , <&macro_release &kp LGUI>
                 ;
         };
+
+        home: home {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LGUI>
+                ;
+        }
+
+        end: end {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp right>
+                , <&macro_release &kp LGUI>
+                ;
+        }
+
+        top: top {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp UP>
+                , <&macro_release &kp LGUI>
+                ;
+        }
+
+        bottom: bottom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp DOWN>
+                , <&macro_release &kp LGUI>
+                ;
+        }
     };
 
     keymap {
