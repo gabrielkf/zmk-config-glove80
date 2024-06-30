@@ -194,6 +194,18 @@
                 , <&macro_release &kp LGUI>
                 ;
         }
+
+        print: print {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                = <&macro_press &kp RIGHT_SHIFT>
+                , <&macro_tap &kp N4>
+                , <&macro_release &kp RGUI>
+                , <&macro_release &kp RIGHT_SHIFT>
+                ;
+        }
     };
 
     keymap {
@@ -213,11 +225,11 @@
         right {
             bindings = <
             &trans        &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans        &home       &kp PG_DN    &end         &trans       &term
+            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &term
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &kp TAB
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &trans       &redo        &trans       &trans
+            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &trans       &trans       &trans
             >;
         };
 
