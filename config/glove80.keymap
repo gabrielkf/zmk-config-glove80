@@ -11,6 +11,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define HYPER LC(LS(LG(LALT)))
+
 // layers
 #define DEFAULT 0
 #define R_LAYER 1
@@ -38,9 +40,24 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        magic: magic_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&rgb_ug_status_macro>;
+        };
     };
 
     macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&rgb_ug RGB_STATUS>;
+        };
+
         bt_0: bt_profile_macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -90,16 +107,6 @@
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp LEFT>
                 , <&macro_release &kp LALT>
-                ;
-        };
-
-        term: terminal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp GRAVE>
-                , <&macro_release &kp LCTRL>
                 ;
         };
 
@@ -285,12 +292,12 @@
 
         default_layer {
             bindings = <
-            &kp F1         &kp F2          &kp F3            &kp F4           &kp F5                                                                                                                          &kp F8       &kp F9           &kp F10           &kp F11            &kp F12
-            &kp EQUAL      &kp N1          &kp N2            &kp N3           &kp N4           &kp N5                                                                                                 &kp N6  &kp N7       &kp N8           &kp N9            &kp N0             &kp MINUS
-            &kp TAB        &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                                  &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
-            &kp CAPS       &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                                  &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
-            &kp GRAVE      &kp Z           &kp X             &kp C            &kp V            &kp B   &rpi LGUI SPACE   &rpi LALT RET  &mo MAGIC      &layer_td  &rpi RALT GRAVE   &rpi RGUI TAB     &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &kp RBKT
-            &kp GLOBE      &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL        &kp RET    &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
+            &kp F1         &kp F2          &kp F3            &kp F4           &kp F5                                                                                                                            &kp F8       &kp F9           &kp F10           &kp F11            &kp F12
+            &kp EQUAL      &kp N1          &kp N2            &kp N3           &kp N4           &kp N5                                                                                                   &kp N6  &kp N7       &kp N8           &kp N9            &kp N0             &kp MINUS
+            &kp TAB        &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                                    &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
+            &kp CAPS       &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                                    &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
+            &kp GRAVE      &kp Z           &kp X             &kp C            &kp V            &kp B   &rpi LGUI SPACE   &rpi LALT RET  &magic MAGIC 0   &layer_td  &rpi RALT GRAVE   &rpi RGUI TAB     &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &kp RBKT
+            &kp GLOBE      &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL          &kp RET    &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
             >;
         };
 
@@ -301,7 +308,7 @@
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &trans
             &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
             &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
-            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
+            &magic        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
             >;
         };
 
