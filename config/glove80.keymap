@@ -109,7 +109,7 @@
                 ;
         };
 
-        sel_all: sel_all {
+        sel_all: sel_all_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -119,7 +119,7 @@
                 ;
         };
 
-        cut: cut {
+        cut: cut_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -129,7 +129,7 @@
                 ;
         };
 
-        copy: copy {
+        copy: copy_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -139,7 +139,7 @@
                 ;
         };
 
-        paste: paste {
+        paste: paste_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -149,7 +149,7 @@
                 ;
         };
 
-        undo: undo {
+        undo: undo_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -159,7 +159,7 @@
                 ;
         };
 
-        redo: redo {
+        redo: redo_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -171,7 +171,7 @@
                 ;
         };
 
-        home: home {
+        home: home_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -181,7 +181,7 @@
                 ;
         };
 
-        end: end {
+        end: end_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -191,7 +191,7 @@
                 ;
         };
 
-        top: top {
+        top: top_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -201,7 +201,7 @@
                 ;
         };
 
-        bottom: bottom {
+        bottom: bottom_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -211,7 +211,7 @@
                 ;
         };
 
-        print: print {
+        print: print_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -223,7 +223,7 @@
                 ;
         };
 
-        find: find {
+        find: find_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -233,7 +233,7 @@
                 ;
         };
 
-        next: next {
+        next: next_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -243,7 +243,7 @@
                 ;
         };
 
-        all: all {
+        all: all_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -253,7 +253,7 @@
                 ;
         };
 
-        format: format {
+        format: format_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -265,7 +265,7 @@
                 ;
         };
 
-        refresh: refresh {
+        refresh: refresh_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -275,7 +275,7 @@
                 ;
         };
 
-        close: close {
+        close: close_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -285,7 +285,7 @@
                 ;
         };
 
-        quit: quit {
+        quit: quit_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -312,23 +312,23 @@
 
         right {
             bindings = <
-            &trans        &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &sel_all
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
-            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
-            &magic        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
+            &trans      &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &trans
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &trans
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &sel_all
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
+            &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
+            &magic      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
             >;
         };
 
         left {
             bindings = <
-            &trans        &trans      &trans       &trans       &trans                                                                                           &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &kp UP       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &kp LEFT     &kp DOWN     &kp RIGHT    &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
-            &trans        &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &trans       &trans       &trans                                                                                           &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &trans       &kp UP       &trans       &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &kp LEFT     &kp DOWN     &kp RIGHT    &trans                                                                 &trans       &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans      &trans       &trans       &trans       &trans
+            &trans      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans      &trans       &trans       &trans       &trans
             >;
         };
 
