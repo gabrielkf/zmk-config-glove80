@@ -306,7 +306,7 @@
             &kp TAB        &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                                         &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
             &kp CAPS       &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                                         &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
             &kp GRAVE      &kp Z           &kp X             &kp C            &kp V            &kp B   &rpi LGUI SPACE   &rpi LALT RET  &magic MAGIC 0   &layer_td       &rpi RALT GRAVE   &rpi RGUI TAB     &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &kp RBKT
-            &kp GLOBE      &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL          &rpi RCTRL RET  &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
+            &kp LCTRL      &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL          &rpi RCTRL RET  &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
             >;
         };
 
@@ -317,7 +317,7 @@
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &sel_all
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
             &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
-            &magic      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
+            &trans      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
             >;
         };
 
