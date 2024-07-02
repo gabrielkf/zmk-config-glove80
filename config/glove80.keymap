@@ -265,6 +265,16 @@
                 ;
         };
 
+        new_tab: new_tab_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp R>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
         refresh: refresh_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -301,20 +311,20 @@
 
         default_layer {
             bindings = <
-            &kp F1         &kp F2          &kp F3            &kp F4           &kp F5                                                                                                                                 &kp F8       &kp F9           &kp F10           &kp F11            &kp F12
-            &kp EQUAL      &kp N1          &kp N2            &kp N3           &kp N4           &kp N5                                                                                                        &kp N6  &kp N7       &kp N8           &kp N9            &kp N0             &kp MINUS
-            &kp TAB        &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                                         &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
-            &kp CAPS       &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                                         &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
-            &kp GRAVE      &kp Z           &kp X             &kp C            &kp V            &kp B   &rpi LGUI SPACE   &rpi LALT RET  &magic MAGIC 0   &layer_td       &rpi RALT GRAVE   &rpi RGUI TAB     &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &kp RBKT
-            &kp LCTRL      &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL          &rpi RCTRL RET  &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
+            &kp F1             &kp F2          &kp F3            &kp F4           &kp F5                                                                                                                                 &kp F8       &kp F9           &kp F10           &kp F11            &kp F12
+            &kp EQUAL          &kp N1          &kp N2            &kp N3           &kp N4           &kp N5                                                                                                        &kp N6  &kp N7       &kp N8           &kp N9            &kp N0             &kp MINUS
+            &kp TAB            &kp Q           &kp W             &kp E            &kp R            &kp T                                                                                                         &kp Y   &kp U        &kp I            &kp O             &kp P              &kp LBKT
+            &kp CAPS           &rpi LSHIFT A   &rpi LCTRL S      &rpi LALT D      &rpi LGUI F      &kp G                                                                                                         &kp H   &rpi RGUI J  &rpi RALT K      &rpi RCTRL L      &rpi LSHIFT SEMI   &kp SQT
+            &pi LSHIFT GRAVE   &kp Z           &kp X             &kp C            &kp V            &kp B   &rpi LGUI SPACE   &rpi LALT RET  &magic MAGIC 0   &layer_td       &rpi RALT GRAVE   &rpi RGUI TAB     &kp N   &kp M        &kp COMMA        &kp DOT           &kp FSLH           &rpi RSHIFT RBKT
+            &kp LCTRL          &home           &end              &kp LEFT         &kp RIGHT                &lt L_LAYER BSPC  &kp ESC        &kp DEL          &rpi RCTRL RET  &kp BSPC          &lt R_LAYER SPACE         &kp DOWN     &kp UP           &kp PG_UP         &kp PG_DN          &kp BSLH
             >;
         };
 
         right {
             bindings = <
             &trans      &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &trans
-            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &trans
-            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &sel_all
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &trans       &sel_all
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &new_tab 
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
             &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
             &trans      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
