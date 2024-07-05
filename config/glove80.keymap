@@ -314,6 +314,16 @@
                 , <&macro_release &kp RCTRL>
                 ;
         };
+
+        cancel: cancel_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp RCTRL>
+                ;
+        };
     };
 
     keymap {
@@ -332,11 +342,11 @@
 
         right {
             bindings = <
-            &trans      &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &trans       &kp F5
-            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &blame       &sel_all
+            &trans      &trans      &trans       &trans       &trans                                                                                            &top        &kp PG_UP    &bottom      &all         &kp F5
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp PG_DN    &end         &cancel      &sel_all
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &trans       &new_tab
-            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &trans       &refresh
-            &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &all         &format      &close
+            &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &kp RSHIFT   &refresh
+            &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &paste        &find       &next        &blame       &format      &close
             &trans      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                   &undo       &redo        &kp DEL      &kp ESC      &quit
             >;
         };
