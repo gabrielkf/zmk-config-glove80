@@ -270,7 +270,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RGUI>
-                , <&macro_tap &kp R>
+                , <&macro_tap &kp T>
                 , <&macro_release &kp RGUI>
                 ;
         };
