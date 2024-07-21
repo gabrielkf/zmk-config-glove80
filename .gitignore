@@ -1,1 +1,4 @@
 *.uf2
+.idea
+.code
+.vs
