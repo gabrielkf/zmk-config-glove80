@@ -375,7 +375,7 @@
                 ;
         };
 
-        new: new_macro {
+        newfile: newfile_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -434,10 +434,10 @@
         left {
             bindings = <
             &kp F12     &kp F11     &kp F10      &kp F9       &bottom                                                                                          &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &home        &kp PG_DN    &end         &kp GRAVE                                                              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &pword       &kp UP       &nword       &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp LSHIF   &kp LEFT     &kp DOWN     &kp RIGHT    &kp LSHIFT                                                             &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp FSLH    &kp DOT      &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &trans      &home        &kp PG_DN    &end         &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &trans      &pword       &kp UP       &nword       &open                                                                  &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp LSHIF   &kp LEFT     &kp DOWN     &kp RIGHT    &line                                                                  &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &comment    &suggestion  &config      &newfile     &file       &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
             &trans      &kp PG_UP   &kp PG_DN    &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans       &trans       &trans       &trans       &trans
             >;
         };
