@@ -363,11 +363,11 @@
 
         left {
             bindings = <
-            &trans      &trans      &trans       &trans       &trans                                                                                           &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &trans       &trans       &trans       &kp GRAVE                                                              &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &trans       &kp UP       &trans       &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &kp LEFT     &kp DOWN     &kp RIGHT    &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &trans      &trans       &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
+            &kp F12     &trans      &top         &kp PG_UP    &bottom                                                                                          &trans       &trans       &trans       &trans       &trans
+            &trans      &trans      &home        &kp PG_DN    &end         &kp GRAVE                                                              &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &trans      &pword       &kp UP       &nword       &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp LSHIF   &kp LEFT     &kp DOWN     &kp RIGHT    &kp LSHIFT                                                             &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp FSLH    &kp DOT      &trans       &trans       &trans      &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
             &trans      &trans      &trans       &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans       &trans       &trans       &trans       &trans
             >;
         };
