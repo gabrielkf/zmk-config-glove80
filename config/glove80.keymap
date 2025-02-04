@@ -334,6 +334,76 @@
                 , <&macro_release &kp RGUI>
                 ;
         };
+
+        file: file_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp P>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        open: open_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp O>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        suggestion: suggestion_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp DOT>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        config: config_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp COMMA>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        new: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp N>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        line: line_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp L>
+                , <&macro_release &kp RGUI>
+                ;
+        };
+
+        comment: comment_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp FSLH>
+                , <&macro_release &kp RGUI>
+                ;
+        };
     };
 
     keymap {
