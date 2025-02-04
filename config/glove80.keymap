@@ -436,7 +436,7 @@
             &kp F12     &kp F11     &kp F10      &kp F9       &bottom                                                                                          &trans       &trans       &trans       &trans       &trans
             &trans      &trans      &home        &kp PG_DN    &end         &trans                                                                 &trans       &trans       &trans       &trans       &trans       &trans
             &trans      &trans      &pword       &kp UP       &nword       &open                                                                  &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp LSHIF   &kp LEFT     &kp DOWN     &kp RIGHT    &line                                                                  &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp LSHIFT  &kp LEFT     &kp DOWN     &kp RIGHT    &line                                                                  &trans       &trans       &trans       &trans       &trans       &trans
             &trans      &comment    &suggestion  &config      &newfile     &file       &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
             &trans      &kp PG_UP   &kp PG_DN    &trans       &trans                   &trans   &trans   &trans      &trans   &trans   &trans                  &trans       &trans       &trans       &trans       &trans
             >;
