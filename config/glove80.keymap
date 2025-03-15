@@ -445,12 +445,12 @@
 
         left {
             bindings = <
-            &kp F12     &kp F11     &kp F10          &kp F9               &top                                                                                             &trans       &trans       &trans       &trans       &trans
-            &kp EQUAL   &kp MINUS   &kp N0           &kp N9               &bottom      &kp LEFT_BRACKET                                                       &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp O       &pword           &kp UP               &nword       &paren                                                                 &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp LSHIFT  &kp LEFT         &kp DOWN             &kp RIGHT    &line                                                                  &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp FSLH    &kp DOT          &COMMA               &file        &newfile    &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
-            &trans      &kp PG_UP   &kp C_AC_BACK    &kp C_AC_FORWARD     &kp PG_DN                &trans   &trans   &trans      &trans   &trans   &trans                  &trans       &trans       &trans       &trans       &trans
+            &kp F12     &kp F11       &kp F10          &kp F9               &top                                                                                             &trans       &trans       &trans       &trans       &trans
+            &kp EQUAL   &kp MINUS     &kp N0           &kp N9               &bottom      &kp LEFT_BRACKET                                                       &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp O         &pword           &kp UP               &nword       &paren                                                                 &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp LSHIFT    &kp LEFT         &kp DOWN             &kp RIGHT    &line                                                                  &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp FSLH      &kp DOT          &kp COMMA            &file        &newfile    &trans   &trans   &trans      &trans   &trans   &trans     &trans       &trans       &trans       &trans       &trans       &trans
+            &trans      &kp PG_UP     &kp C_AC_BACK    &kp C_AC_FORWARD     &kp PG_DN                &trans   &trans   &trans      &trans   &trans   &trans                  &trans       &trans       &trans       &trans       &trans
             >;
         };
 
