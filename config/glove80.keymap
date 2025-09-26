@@ -452,7 +452,7 @@
 
         right {
             bindings = <
-            &trans      &trans      &trans       &trans       &trans                                                                                            &kp CAPS    &kp F4       &bottom      &all         &kp F5
+            &trans      &trans      &trans       &trans       &trans                                                                                            &kp F5      &kp F4       &bottom      &all         &kp CAPS
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &print        &home       &kp Q        &end         &cancel      &sel_all
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &cut          &pword      &kp UP       &nword       &save        &new_tab
             &trans      &trans      &trans       &trans       &trans       &trans                                                                 &copy         &kp LEFT    &kp DOWN     &kp RIGHT    &kp RSHIFT   &refresh
